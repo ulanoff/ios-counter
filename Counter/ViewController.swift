@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         counterLabelView.text = "Значение счетчика: \(counter)"
         historyTextView.text.insert(contentsOf: "\n\(getFormattedDate()): значение сброшено",
                                     at: historyTextView.text.index(historyTextView.text.startIndex,
-                                                                   offsetBy: 17)
+                                                                   offsetBy: 18)
         )
     }
     
@@ -37,12 +37,12 @@ class ViewController: UIViewController {
             counterLabelView.text = "Значение счетчика: \(counter)"
             historyTextView.text.insert(contentsOf: "\n\(getFormattedDate()): значение изменено на -1",
                                         at: historyTextView.text.index(historyTextView.text.startIndex,
-                                                                       offsetBy: 17)
+                                                                       offsetBy: 18)
             )
         } else {
             historyTextView.text.insert(contentsOf: "\n\(getFormattedDate()): попытка уменьшить значение счётчика ниже 0",
                                         at: historyTextView.text.index(historyTextView.text.startIndex,
-                                                                       offsetBy: 17)
+                                                                       offsetBy: 18)
             )
         }
     }
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         counterLabelView.text = "Значение счетчика: \(counter)"
         historyTextView.text.insert(contentsOf: "\n\(getFormattedDate()): значение изменено на +1",
                                     at: historyTextView.text.index(historyTextView.text.startIndex,
-                                                                   offsetBy: 17)
+                                                                   offsetBy: 18)
         )
     }
     
